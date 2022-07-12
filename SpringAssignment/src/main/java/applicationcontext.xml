@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+<context:annotation-config></context:annotation-config>
+<bean id="assignmen1" class="Assignment1.assignment1" factory-method="getObjassignment1"></bean>
+
+
+<bean id="average" class="Assignment2.AverageNum2">
+
+		<property name="num">
+			<list>
+				<value>45</value>
+				<value>25</value>
+				<value>30</value>
+				<value>55</value>
+				<value>85</value>
+			</list>
+		</property>
+	</bean>
+	
+	
+	<bean id="interest" class="Assignment3.Emi"> 
+	<constructor-arg value="8" type="int"></constructor-arg>
+	
+	
+</bean>
+
+<bean id="maximum" class="Assignment5.StreamMaximum">
+
+		<property name="numbers">
+			<list>
+				<value>28</value>
+				<value>45</value>
+				<value>95</value>
+				<value>93</value>
+				<value>100</value>
+			</list>
+		</property>
+
+
+</bean>
+
+<bean id="vowl" class="Assignment6.vowel">
+		<property name="st">
+			<array>
+				<value>mobile</value>
+				<value>Led</value>
+				<value>Lcd</value>
+				<value>Freeze</value>
+				<value>fly</value>
+
+			</array>
+
+		</property>
+
+	</bean>
+
+
+
+
+<bean id="array" class="Assignment7.Array1">
+		<property name="a">
+			<array>
+				<value>10</value>
+				<value>20</value>
+				<value>30</value>
+				<value>40</value>
+
+			</array>
+
+		</property>
+
+	</bean><bean id="array1" class="Assignment7.Array2">
+		<property name="b">
+			<array>
+				<value>15</value>
+				<value>25</value>
+				<value>35</value>
+				<value>45</value>
+
+			</array>
+
+		</property>
+
+	</bean>
+
+<bean id="listitem" class="Assignment8.ItemsAscending">
+
+		<property name="item">
+			<list>
+				<value>AC</value>
+				<value>Mobile</value>
+				<value>Headphone</value>
+				<value>LED</value>
+				<value>LCD</value>
+				<value>AC</value>
+			</list>
+		</property>
+	</bean>
+
+
+<bean id="cty"
+		class="Assignment9.CityDistance">
+		<property name="fromCity" value="pune"></property>
+		<property name="toCity" value="mumbai"></property>
+		<property name="distance" value="200"></property>
+	</bean>
+
+	<bean id="cty1"
+		class="Assignment9.CityDistance">
+		<property name="fromCity" value="pune"></property>
+		<property name="toCity" value="baramati"></property>
+		<property name="distance" value="150"></property>
+	</bean>
+
+	<bean id="cty2" class="Assignment9.CityDistance">
+		<property name="fromCity" value="pune"></property>
+		<property name="toCity" value="satara"></property>
+		<property name="distance" value="250"></property>
+	</bean>
+
+	<bean id="cty3"
+		class="Assignment9.CityDistance">
+		<property name="fromCity" value="indore"></property>
+		<property name="toCity" value="pune"></property>
+		<property name="distance" value="590"></property>
+	</bean>
+
+<bean id="stu11" class="Assignment10.Student">
+		<constructor-arg>
+			<map>
+				<entry key="karan" value="480"></entry>
+				<entry key="kiran" value="320"></entry>
+				<entry key="akshay" value="350"></entry>
+				<entry key="ajay" value="250"></entry>
+				<entry key="harshad" value="475"></entry>
+				<entry key="sidhant" value="250"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+<bean id="objresult" class="Assignment11.result">
+<constructor-arg value=" 1" type="int"></constructor-arg>
+<constructor-arg value="67" type="int"></constructor-arg>
+<constructor-arg value="55" type="int"></constructor-arg>
+<constructor-arg value="78" type="int"></constructor-arg>
+<constructor-arg value="80" type="int"></constructor-arg>
+
+</bean>
+<bean id="objresult1" class="Assignment11.result">
+<constructor-arg value=" 2" type="int"></constructor-arg>
+<constructor-arg value="48" type="int"></constructor-arg>
+<constructor-arg value="90" type="int"></constructor-arg>
+<constructor-arg value="82" type="int"></constructor-arg>
+<constructor-arg value="55" type="int"></constructor-arg>
+
+</bean>
+<bean id="objresult2" class="Assignment11.result">
+<constructor-arg value=" 3" type="int"></constructor-arg>
+<constructor-arg value="66" type="int"></constructor-arg>
+<constructor-arg value="76" type="int"></constructor-arg>
+<constructor-arg value="72" type="int"></constructor-arg>
+<constructor-arg value="82" type="int"></constructor-arg>
+
+</bean>
+<bean id="objresult3" class="Assignment11.result">
+<constructor-arg value=" 4" type="int"></constructor-arg>
+<constructor-arg value="78" type="int"></constructor-arg>
+<constructor-arg value="65" type="int"></constructor-arg>
+<constructor-arg value="55" type="int"></constructor-arg>
+<constructor-arg value="48" type="int"></constructor-arg>
+
+</bean>
+<bean id="objresult4" class="Assignment11.result">
+<constructor-arg value=" 5" type="int"></constructor-arg>
+<constructor-arg value="96" type="int"></constructor-arg>
+<constructor-arg value="76" type="int"></constructor-arg>
+<constructor-arg value="88" type="int"></constructor-arg>
+<constructor-arg value="60" type="int"></constructor-arg>
+
+</bean>
+
+<bean id="objstud" class="Assignment11.Stud">
+<constructor-arg value="Shrikant Mane"></constructor-arg>
+<constructor-arg value="1" type="int"></constructor-arg>
+<constructor-arg value="27-06-1996"></constructor-arg>
+<constructor-arg value="BTECH"></constructor-arg>
+<constructor-arg value="CS"></constructor-arg>
+<constructor-arg>
+<ref bean="objresult"/>
+</constructor-arg>
+</bean>
+
+
+
+<bean id="objstud1" class="Assignment11.Stud">
+<constructor-arg value="Amol pavar"></constructor-arg>
+<constructor-arg value="2" type="int"></constructor-arg>
+<constructor-arg value="30-05-1995"></constructor-arg>
+<constructor-arg value="mechanical"></constructor-arg>
+<constructor-arg value="mechanical"></constructor-arg>
+<constructor-arg>
+<ref bean="objresult1"/>
+</constructor-arg>
+</bean>
+<bean id="objstud2" class="Assignment11.Stud">
+<constructor-arg value="Anand Pavar"></constructor-arg>
+<constructor-arg value="3" type="int"></constructor-arg>
+<constructor-arg value="01-12-1998"></constructor-arg>
+<constructor-arg value="btech"></constructor-arg>
+<constructor-arg value="CS"></constructor-arg>
+<constructor-arg>
+<ref bean="objresult2"/>
+</constructor-arg>
+</bean>
+<bean id="objstud3" class="Assignment11.Stud">
+<constructor-arg value="Akshay Bhosale"></constructor-arg>
+<constructor-arg value="4" type="int"></constructor-arg>
+<constructor-arg value="13-02-1998"></constructor-arg>
+<constructor-arg value="BCS"></constructor-arg>
+<constructor-arg value="cs"></constructor-arg>
+<constructor-arg>
+<ref bean="objresult3"/>
+</constructor-arg>
+</bean>
+<bean id="objstud4" class="Assignment11.Stud">
+<constructor-arg value="kiran Randhave"></constructor-arg>
+<constructor-arg value="5" type="int"></constructor-arg>
+<constructor-arg value="02-03-1996"></constructor-arg>
+<constructor-arg value="BCA"></constructor-arg>
+<constructor-arg value="CS"></constructor-arg>
+<constructor-arg>
+<ref bean="objresult4"/>
+</constructor-arg>
+</bean>
+
+
+<bean id="objemp5" class="Assignment12.Employee">
+<constructor-arg value=" 1" type="int"></constructor-arg>
+<constructor-arg value="Karan Jadhav"></constructor-arg>
+<constructor-arg value="25000" type="int"></constructor-arg>
+
+</bean>
+<bean id="objemp1" class="Assignment12.Employee">
+<constructor-arg value=" 2" type="int"></constructor-arg>
+<constructor-arg value="Kiran Randhave"></constructor-arg>
+<constructor-arg value="20000" type="int"></constructor-arg>
+
+</bean>
+<bean id="objemp2" class="Assignment12.Employee">
+<constructor-arg value=" 3" type="int"></constructor-arg>
+<constructor-arg value="Ashish pavar"></constructor-arg>
+<constructor-arg value="28000" type="int"></constructor-arg>
+</bean>
+<bean id="objemp3" class="Assignment12.Employee">
+<constructor-arg value=" 4" type="int"></constructor-arg>
+<constructor-arg value="Akshay Bhosale"></constructor-arg>
+<constructor-arg value="65000" type="int"></constructor-arg>
+
+
+
+</bean>
+<bean id="objemp4" class="Assignment12.Employee">
+<constructor-arg value="5" type="int"></constructor-arg>
+<constructor-arg value="Harshad Bhosale"></constructor-arg>
+<constructor-arg value="44000" type="int"></constructor-arg>
+
+
+
+</bean>
+
+<bean id="objdept" class="Assignment12.Department">
+<constructor-arg value=" 1" type="int"></constructor-arg>
+<constructor-arg value="Account"></constructor-arg>
+
+<constructor-arg>
+<ref bean="objemp5"/>
+</constructor-arg>
+</bean>
+<bean id="objdept1" class="Assignment12.Department">
+<constructor-arg value=" 2" type="int"></constructor-arg>
+<constructor-arg value="Testing"></constructor-arg>
+
+<constructor-arg>
+<ref bean="objemp1"/>
+</constructor-arg>
+</bean>
+<bean id="objdept2" class="Assignment12.Department">
+<constructor-arg value=" 3" type="int"></constructor-arg>
+<constructor-arg value="it"></constructor-arg>
+
+<constructor-arg>
+<ref bean="objemp2"/>
+</constructor-arg>
+</bean>
+<bean id="objdept3" class="Assignment12.Department">
+<constructor-arg value=" 4" type="int"></constructor-arg>
+<constructor-arg value="Electronics"></constructor-arg>
+
+<constructor-arg>
+<ref bean="objemp3"/>
+</constructor-arg>
+</bean>
+<bean id="objdept4" class="Assignment12.Department">
+<constructor-arg value=" 5" type="int"></constructor-arg>
+<constructor-arg value="mechanical"></constructor-arg>
+
+<constructor-arg>
+<ref bean="objemp4"/>
+</constructor-arg>
+</bean>
+
+ <bean id="first" class="Assignment13.moviefactory" factory-method="getfirstObject"></bean>
+<bean id="second" class="Assignment13.moviefactory" factory-method="getsecondObject"></bean>
+<bean id="third" class="Assignment13.moviefactory" factory-method="getthirdObject"></bean>
+
+
+
+
+<bean id="circle" class="Assignment14.Shapefactory" factory-method="getCircleObject"></bean>
+<bean id="rectangle" class="Assignment14.Shapefactory" factory-method="getRectangleObject"></bean>
+<bean id="square" class="Assignment14.Shapefactory" factory-method="getSquareObject"></bean>
+
+
+<bean id="objitem" class="Assignment15.Item">
+<constructor-arg value="shirt"></constructor-arg>
+<constructor-arg value="11" type="int"></constructor-arg>
+<constructor-arg value="450" type="float"></constructor-arg>
+<constructor-arg value="10" type="float"></constructor-arg>
+</bean>
+<bean id="objcat" class="Assignment15.category">
+<constructor-arg value="formal"></constructor-arg>
+<constructor-arg value="blue"></constructor-arg>
+<constructor-arg>
+<ref bean="objitem"/>
+</constructor-arg></bean>
+<bean id="objcom" class="Assignment15.Customer">
+<constructor-arg value="Karan Jadhav"></constructor-arg>
+<constructor-arg value="401 mundhwa hadapsar"></constructor-arg>
+<constructor-arg>
+<ref bean="objcat"/>
+</constructor-arg>
+</bean>
+
+ <bean id ="nn"  class="Assignment4.Department" >
+		<property name="did" value="201"></property>
+		<property name="dname" value="Developer"></property>
+		
+	</bean>
+	<bean id ="ibean4" class="Assignment4.Employee"  autowire="byType">
+	    <property name="eid" value="101"></property>
+		<property name="ename" value="karan jadhav"></property>
+		<property name="salary" value="25000"></property>
+		<property name="email" value="jadhavkaran905@gmail.com"></property>
+		<property name="department" ref="nn"></property>
+		
+	</bean>	
+		<bean id ="nn1"  class="Assignment4.Department" >
+		<property name="did" value="202"></property>
+		<property name="dname" value="Hr"></property>
+		
+	</bean>
+	<bean id ="ibean41" class="Assignment4.Employee"  autowire="byType">
+	    <property name="eid" value="102"></property>
+		<property name="ename" value="kiran"></property>
+		<property name="salary" value="15000"></property>
+		<property name="email" value="kiran@gmail.com"></property>
+		<property name="department" ref="nn1"></property>
+	</bean>
+
+
+	</beans>
+	
+	
+	
+	
+	
+	
+	
+	
+	
